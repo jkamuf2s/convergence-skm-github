@@ -1,0 +1,53 @@
+
+.ccm-convergence_chat > .main {
+    height: 100%
+}
+
+.ccm-convergence_chat > .main > .messages {
+
+    display: table;
+    padding: 0.5em;
+    padding-bottom: 2em;
+
+}
+
+.ccm-convergence_chat > .main > .messages > div {
+
+    display: table-row;
+
+}
+
+.ccm-convergence_chat > .main > .messages > div > div {
+
+    display: table-cell;
+
+}
+
+.ccm-convergence_chat > .main > .messages > .message > .name:after {
+
+    content: ':';
+    padding-right: 0.5em;
+
+}
+
+.ccm-convergence_chat > .main > .inputElements {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.convergence_chat-new_message_form > .input {
+
+    width: 75%;
+}
+
+.convergence_chat-new_message_form > .button {
+
+    width: 20%;
+}
+
+.ccm-convergence_chat {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}

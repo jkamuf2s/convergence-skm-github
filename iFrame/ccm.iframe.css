@@ -1,0 +1,9 @@
+.ccm-iframe_frame{
+    height: inherit;
+    width: inherit;
+    overflow: hidden;
+}
+
+.ccm-iframe_urlButton{
+    overflow: hidden;
+}

@@ -1,0 +1,14 @@
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#informationWrapperDiv {
+    margin-bottom: 20px;
+}
+
+#componentWrapperDiv {
+    border: 1px solid black;
+    height: 800px;
+    width: 100%;
+}

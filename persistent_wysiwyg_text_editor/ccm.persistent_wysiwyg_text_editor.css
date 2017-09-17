@@ -1,0 +1,26 @@
+.ccm-persistent_wysiwyg_text_editor-text_area {
+    border: none !important;
+    padding: 0 0 0 0 !important;
+    resize: none !important;
+}
+
+.ccm-persistent_wysiwyg_text_editor {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: white;
+
+}
+
+.fr-wrapper, .fr-element {
+    z-index: inherit !important;
+}
+
+.fr-placeholder {
+    visibility: hidden;
+}
+
+/*disable the 'Unlicensed Froala Editor' div tag*/
+.fr-wrapper + div {
+    display: none
+}

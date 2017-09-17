@@ -1,0 +1,8 @@
+{
+  "saveTextButton": {
+    "tag": "button",
+    "type": "button",
+    "id": "%id%",
+    "inner": "Save"
+  }
+}

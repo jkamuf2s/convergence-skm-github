@@ -1,0 +1,50 @@
+{
+  "main": {
+    "tag": "div",
+    "class": "main",
+    "inner": [
+      {
+        "tag": "div",
+        "class": "messages"
+      },
+      {
+        "tag": "div",
+        "class": "inputElements"
+      }
+    ]
+  },
+  "message": {
+    "tag": "div",
+    "class": "message",
+    "inner": [
+      {
+        "tag": "div",
+        "class": "name",
+        "inner": "%name%"
+      },
+      {
+        "tag": "div",
+        "class": "text",
+        "inner": "%text%"
+      }
+    ]
+  },
+  "input": {
+    "tag": "form",
+    "class": "convergence_chat-new_message_form",
+    "inner": [
+      {
+        "tag": "input",
+        "class": "input",
+        "placeholder": "Enter message here..."
+      },
+      {
+        "tag": "input",
+        "class": "button",
+        "type": "submit",
+        "value": "Send"
+      }
+    ],
+    "onsubmit": "%onsubmit%"
+  }
+}

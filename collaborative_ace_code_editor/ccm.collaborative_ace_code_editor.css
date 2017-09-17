@@ -1,0 +1,27 @@
+.ccm-collaborative_ace_code_editor {
+
+    height: inherit;
+    width: inherit;
+
+}
+
+.ccm-collaborative_ace_code_editor-wrapped-editor {
+
+    height: inherit;
+    width: inherit;
+
+}
+
+.ccm-collaborative_ace_code_editor-editor {
+
+    height: inherit;
+    width: inherit;
+    max-height: 100%;
+    max-width: 100%;
+
+}
+
+/*that the vertical scrollbar does not hide the resize handle*/
+.ace_scrollbar-v {
+    height: 90%;
+}

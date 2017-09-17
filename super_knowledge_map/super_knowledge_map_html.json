@@ -1,0 +1,8 @@
+{
+  "componentHeadDiv": {
+    "tag": "div",
+    "id": "%id%",
+    "class": "ccm-super_knowledge_map-head_div",
+    "inner": "%value%"
+  }
+}

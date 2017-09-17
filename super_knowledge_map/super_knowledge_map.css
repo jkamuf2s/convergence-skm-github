@@ -1,0 +1,136 @@
+.ccm-super_knowledge_map {
+    outline: 1px solid black; /* every component wrapped in a div gets an outline; takes no space just added outside of div area */
+
+    /* every component fully fits the dimension of its wrapping div*/
+    height: 100%;
+    width: 100%;
+
+}
+
+.ccm-super_knowledge_map-child_div_area {
+
+    /*overrides the '.ui-resizable' 'position:relative;' this helps that after resizing the position of the element
+    get placed relative to its parent <div>*/
+    position: absolute !important;
+
+}
+
+.ccm-super_knowledge_map-plus_button {
+    /* that the '+' button stays in the same row as the text and does not get a new row assigned */
+    display: inline !important;
+    /* prevent overriding when dragged around using jquery-ui->draggable and then the `+` box moves */
+    cursor: auto !important;
+}
+
+.ccm-super_knowledge_map-head_div {
+    outline: 1px solid black; /* give the head div an outline*/
+    overflow: hidden; /* that the inner text is hidden if the div gets smaller then the text length*/
+    white-space: nowrap; /* that the words do not make a line break if the div width gets smaller */
+    max-height: 21px;
+    max-width: 100%;
+
+    /* stops the blue text mark from appearing */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.ccm-super_knowledge_map-head_div_content{
+    display:inline;
+}
+.ccm-super_knowledge_map-head_div_user_icon {
+    width: 15px;
+    height: 15px;
+    vertical-align: bottom;
+    display: flex;
+
+}
+
+.ccm-super_knowledge_map-closeDeleteImage{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    float: right;
+}
+
+.ccm-super_knowledge_map-leaf_div_area {
+    height: inherit;
+    width: inherit;
+    overflow: auto;
+
+}
+
+.ccm-super_knowledge_map-yellow_line {
+    width: 15px;
+    height: 6px;
+    background: yellow;
+    display: flex;
+}
+
+.ccm-super_knowledge_map-blue_line {
+    width: 15px;
+    height: 6px;
+    background: blue;
+    display: flex;
+}
+
+.ccm-super_knowledge_map-green_line {
+    width: 15px;
+    height: 6px;
+    background: green;
+    display: flex;
+}
+
+.ccm-super_knowledge_map-invisible_line {
+    width: 5px;
+    height: 6px;
+    display: flex;
+}
+
+.ui-resizable-handle {
+    z-index: inherit !important; /* that the resizable handle are not on top of other nodes but at same level as the node , does not change other behavior*/
+
+}
+
+/*bug in jquery ui dialog -> we need to hide some inner html text*/
+.ui-button-icon-only{
+    color:transparent;
+}
+
+/* start style used for shared mouse pointer and click spot*/
+
+.remoteCursor {
+    display: inline-block;
+    position: absolute;
+    width: 11px;
+    height: 15px;
+    visibility: hidden;
+}
+
+.clickSpot {
+    position: absolute;
+    animation: ripple 300ms forwards;
+    border-radius: 18px;
+    background-color: palegreen;
+}
+
+@keyframes ripple {
+    0% {
+        width: 0;
+        height: 0;
+        margin: 0;
+        opacity: 1;
+    }
+    100% {
+        width: 36px;
+        height: 36px;
+        margin: -18px 0 0 -18px;
+        opacity: 0.2;
+    }
+}
+
+/* end style used for shared mouse pointer and click spot*/
