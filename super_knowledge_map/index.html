@@ -2,22 +2,27 @@
 <meta charset="utf-8">
 
 
+<script type="text/javascript" src="libs/ccm.js"></script>
 
-<script type="text/javascript" src="libs/jquery-2.2.3.js"></script><!--remove this-->
-<script src="ccm.super_knowledge_map.js"></script>
-
-
-
+<script type="text/javascript" src="ccm.super_knowledge_map.js"></script>
 <link rel="stylesheet" type="text/css" href="index.css">
 
+<!--this includes are  only needed that JavaScrip debugging works in the files below-->
+<script type="text/javascript" src="../iFrame/ccm.iframe.js"></script>
+<script type="text/javascript" src="libs/jquery-2.2.3.js"></script>
+<script type="text/javascript" src="../convergence_chat/ccm.convergence_chat.js"></script>
+<script type="text/javascript" src="../persistent_wysiwyg_text_editor/ccm.persistent_wysiwyg_text_editor.js"></script>
+<script type="text/javascript" src="../collaborative_ace_code_editor/ccm.collaborative_ace_code_editor.js"></script>
+<script type="text/javascript" src="../collaborative_ace_code_editor/libs/ace-builds/src/ace.js"></script>
 
 
 
-<div id="componentWrapperDiv">
+<!-- embed the ccm.super_knowledge_map component-->
+<div id="componentWrapperDiv"></div>
+<script>
 
-    <ccm-super_knowledge_map id="ccm-super_knowledge_map-1"></ccm-super_knowledge_map>
-
-</div>
+    ccm.render('ccm.super_knowledge_map.js', $('#componentWrapperDiv')); // render a component
 
 
+</script>
 
